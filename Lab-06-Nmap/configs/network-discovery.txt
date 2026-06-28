@@ -1,0 +1,13 @@
+# Nmap 7.99 scan initiated Sun Jun 28 10:12:20 2026 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -sn -oN C:\\Users\\tacha\\OneDrive\\Documents\\DocumentsGitHub\\Cybersecurity-Lab\\Lab-06-Nmap\\configs\\network-discovery.txt 192.168.1.0/24
+Nmap scan report for MyRouter (192.168.1.1)
+Host is up (0.010s latency).
+MAC Address: EC:55:1C:CC:AA:83 (Huawei Technologies)
+Nmap scan report for unknown8882791465bb.Home (192.168.1.8)
+Host is up (0.10s latency).
+MAC Address: 88:82:79:14:65:BB (Shenzhen RB-Link Intelligent TechnologyLtd)
+Nmap scan report for unknown90de80a113a7.Home (192.168.1.23)
+Host is up (0.10s latency).
+MAC Address: 90:DE:80:A1:13:A7 (Shenzhen Century Xinyang Technology)
+Nmap scan report for Gabriel.Home (192.168.1.31)
+Host is up.
+# Nmap done at Sun Jun 28 10:12:27 2026 -- 256 IP addresses (4 hosts up) scanned in 6.73 seconds

@@ -1,0 +1,33 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="CgTyxAO_gN7Cq0M67HJZ">
+    <mxGraphModel dx="860" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8c46Hp150Pr3mvfW-JIm-7" edge="1" parent="1" source="8c46Hp150Pr3mvfW-JIm-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="8c46Hp150Pr3mvfW-JIm-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8c46Hp150Pr3mvfW-JIm-11" edge="1" parent="1" source="8c46Hp150Pr3mvfW-JIm-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="8c46Hp150Pr3mvfW-JIm-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8c46Hp150Pr3mvfW-JIm-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;div&gt;Huawei Router&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;192.168.1.1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="320" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="8c46Hp150Pr3mvfW-JIm-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="&lt;div&gt;Windows 11 Laptop&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;192.168.1.31&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(Nmap Scanner)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="140" x="180" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="8c46Hp150Pr3mvfW-JIm-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;div&gt;Unknown Device&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;unknown8882791465bb.Home&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;192.168.1.8&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="220" x="410" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="8c46Hp150Pr3mvfW-JIm-10" edge="1" parent="1" source="8c46Hp150Pr3mvfW-JIm-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="379" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8c46Hp150Pr3mvfW-JIm-6" parent="1" style="text;whiteSpace=wrap;fontSize=19;" value="Internet" vertex="1">
+          <mxGeometry height="40" width="70" x="344" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

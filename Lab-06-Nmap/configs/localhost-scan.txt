@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Sun Jun 28 10:10:33 2026 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -oN C:\\Users\\tacha\\OneDrive\\Documents\\DocumentsGitHub\\Cybersecurity-Lab\\Lab-06-Nmap\\configs\\localhost-scan.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0019s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+5357/tcp open  wsdapi
+
+# Nmap done at Sun Jun 28 10:10:34 2026 -- 1 IP address (1 host up) scanned in 0.62 seconds
