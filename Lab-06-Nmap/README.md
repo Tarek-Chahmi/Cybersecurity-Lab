@@ -1,92 +1,45 @@
-\# Lab 06 – Nmap Network Discovery
-
-🎯 Objective
-
-🖥️ Environment
-
-📚 Concepts Covered
-
-🛠️ Commands Executed
-
-📊 Results
-
-📸 Screenshots
-
-🗺️ Diagram
-
-🎓 Key Learnings
-
-🔒 Security Recommendations
-
-✅ Conclusion
+# Lab 06 – Nmap Network Discovery
 
 
-
-🎯 Objective
-
-
+##  🎯 Objective
 
 Learn the fundamentals of network reconnaissance using Nmap by scanning the local machine and the local network. This lab introduces essential techniques used during the reconnaissance phase of penetration testing and security assessments.
 
+## 🖥️ Environment
 
+**Operating System**
 
-🖥️ Environment
+- Windows 11
 
+**Tool**
 
+- Nmap 7.99
 
-\*\*Operating System\*\*
+**Targets**
 
+- Localhost (127.0.0.1)
 
+- Local Network (192.168.1.0/24)
 
-\- Windows 11
+## 📚 Concepts Covered
 
+- Host Discovery
 
+- Port Scanning
 
-\*\*Tool\*\*
+- Service Detection
 
+- Operating System Detection
 
+- Aggressive Scan
 
-\- Nmap 7.99
+- Network Discovery
 
+- Basic Network Topology
 
+## 🛠️ Commands Executed
 
-\*\*Targets\*\*
-
-
-
-\- Localhost (127.0.0.1)
-
-\- Local Network (192.168.1.0/24)
-
-
-
-📚 Concepts Covered
-
-
-
-\- Host Discovery
-
-\- Port Scanning
-
-\- Service Detection
-
-\- Operating System Detection
-
-\- Aggressive Scan
-
-\- Network Discovery
-
-\- Basic Network Topology
-
-
-
-🛠️ Commands Executed
-
-
-
-1\. Verify Installation
-
-
+### 1. Verify Installation
 
 ```powershell
 
@@ -94,31 +47,15 @@ nmap --version
 
 ```
 
-
-
-📌 Purpose Purpose
-
-
+📌 Purpose
 
 Verify that Nmap is correctly installed and accessible from PowerShell.
 
-
-
 📊 Results
-
-
 
 Nmap version 7.99 successfully detected.
 
-
-
-\---
-
-
-
-2\. Basic Host Scan
-
-
+### 2. Basic Host Scan
 
 ```powershell
 
@@ -126,40 +63,23 @@ nmap 127.0.0.1
 
 ```
 
+📌 Purpose
 
+- Verify that the host is reachable.
 
-📌 Purpose Purpose
-
-
-
-\- Verify that the host is reachable.
-
-\- Identify open TCP ports.
-
-
+- Identify open TCP ports.
 
 📊 Results
 
-
-
 Open ports detected:
 
+- TCP 135 (MSRPC)
 
+- TCP 445 (Microsoft-DS)
 
-\- TCP 135 (MSRPC)
+- TCP 5357 (WSDAPI)
 
-\- TCP 445 (Microsoft-DS)
-
-\- TCP 5357 (WSDAPI)
-
-
-
-\---
-
-
-
-3\. Service Detection
-
+### 3. Service Detection
 
 
 ```powershell
@@ -168,39 +88,21 @@ nmap -sV 127.0.0.1
 
 ```
 
-
-
-📌 Purpose Purpose
-
-
+📌 Purpose 
 
 Identify the services running on each open port.
 
-
-
 📊 Results
-
-
 
 Detected services:
 
+- Microsoft Windows RPC
 
+- Microsoft HTTPAPI 2.0
 
-\- Microsoft Windows RPC
+- Microsoft SMB
 
-\- Microsoft HTTPAPI 2.0
-
-\- Microsoft SMB
-
-
-
-\---
-
-
-
-4\. Operating System Detection
-
-
+### 4. Operating System Detection
 
 ```powershell
 
@@ -208,91 +110,53 @@ nmap -O 127.0.0.1
 
 ```
 
-
-
-📌 Purpose Purpose
-
-
+📌 Purpose 
 
 Identify the operating system of the target.
 
-
-
 📊 Results
-
-
 
 Operating System detected:
 
+- Microsoft Windows 11
+
+- Version 24H2–25H2
 
 
-\- Microsoft Windows 11
-
-\- Version 24H2–25H2
-
-
-
-\---
-
-
-
-5\. Aggressive Scan
-
-
+### 5. Aggressive Scan
 
 ```powershell
 
 nmap -A 127.0.0.1
 
 ```
-
-
-
-📌 Purpose Purpose
-
-
+📌 Purpose 
 
 Perform advanced enumeration including:
 
+- Service Detection
 
+- Version Detection
 
-\- Service Detection
+- Operating System Detection
 
-\- Version Detection
+- NSE Scripts
 
-\- Operating System Detection
-
-\- NSE Scripts
-
-\- SMB Information
-
-
+- SMB Information
 
 📊 Results
 
-
-
 Additional information collected:
 
+- HTTP Server Header
 
+- SMB Security Mode
 
-\- HTTP Server Header
+- SMB Time
 
-\- SMB Security Mode
+- Microsoft HTTPAPI
 
-\- SMB Time
-
-\- Microsoft HTTPAPI
-
-
-
-\---
-
-
-
-6\. Network Configuration
-
-
+### 6. Network Configuration
 
 ```powershell
 
@@ -300,35 +164,20 @@ ipconfig
 
 ```
 
-
-
 📌 Purpose
-
-
 
 Identify the local network configuration before scanning the subnet.
 
-
-
 📊 Results
 
+- IP Address: 192.168.1.31
+
+- Subnet Mask: 255.255.255.0
+
+- Default Gateway: 192.168.1.1
 
 
-\- IP Address: 192.168.1.31
-
-\- Subnet Mask: 255.255.255.0
-
-\- Default Gateway: 192.168.1.1
-
-
-
-\---
-
-
-
-7\. Network Discovery
-
-
+### 7. Network Discovery
 
 ```powershell
 
@@ -336,43 +185,26 @@ nmap -sn 192.168.1.0/24
 
 ```
 
-
-
-📌 Purpose Purpose
-
-
+📌 Purpose 
 
 Discover active hosts on the local network.
 
-
-
 📊 Results
 
+| IP Address |    Device        |
+
+|------------|------------------|
+
+|192.168.1.1 |  Huawei Router   |
+
+|192.168.1.8 |  Unknown Device  |
+
+|192.168.1.31| Windows 11 Laptop|
 
 
-| IP Address | Device |
-
-|------------|---------------------------|
-
-|192.168.1.1|Huawei Router|
-
-|192.168.1.8|Unknown Device|
-
-|192.168.1.31|Windows 11 Laptop|
-
-
-
-\---
-
-
-
-📸 Screenshots
-
-
+## 📸 Screenshots
 
 The following screenshots are available in:
-
-
 
 ```
 
@@ -382,31 +214,23 @@ Lab-06-Nmap/
 
 ```
 
+- 01-nmap-version.png
 
+- 02-basic-scan.png
 
-\- 01-nmap-version.png
+- 03-service-scan.png
 
-\- 02-basic-scan.png
+- 04-os-detection.png
 
-\- 03-service-scan.png
+- 05-aggressive-scan.png
 
-\- 04-os-detection.png
+- 06-ipconfig.png
 
-\- 05-aggressive-scan.png
+- 07-network-discovery.png
 
-\- 06-ipconfig.png
-
-\- 07-network-discovery.png
-
-
-
-🗺️ Diagram
-
-
+## 🗺️ Diagram
 
 Network topology diagram:
-
-
 
 ```
 
@@ -414,57 +238,43 @@ Lab-06-Nmap/
 
 └── diagrams/
 
-\\\&#x20;   └── network-topology.drawio
+  └── network-topology.drawio
 
 ```
 
-
-
-🎓 Key Learnings
-
-
+## 🎓 Key Learnings
 
 During this lab, I learned how to:
 
+- Install and verify Nmap.
 
+- Scan a host.
 
-\- Install and verify Nmap.
+- Identify open ports.
 
-\- Scan a host.
+- Detect running services.
 
-\- Identify open ports.
+- Detect the operating system.
 
-\- Detect running services.
+- Discover devices on a local network.
 
-\- Detect the operating system.
+- Create a basic network topology diagram.
 
-\- Discover devices on a local network.
+- Interpret Nmap scan results.
 
-\- Create a basic network topology diagram.
+## 🔒 Security Recommendations
 
-\- Interpret Nmap scan results.
+- Disable unnecessary services.
 
+- Restrict SMB access whenever possible.
 
+- Regularly scan internal networks to identify exposed services.
 
-🔒 Security Recommendations
+- Keep operating systems and applications fully updated.
 
+- Monitor newly discovered devices connected to the network.
 
-
-\- Disable unnecessary services.
-
-\- Restrict SMB access whenever possible.
-
-\- Regularly scan internal networks to identify exposed services.
-
-\- Keep operating systems and applications fully updated.
-
-\- Monitor newly discovered devices connected to the network.
-
-
-
-✅ Conclusion
-
-
+## ✅ Conclusion
 
 This lab introduced the core functionalities of Nmap, one of the most widely used network reconnaissance tools in cybersecurity. By performing host discovery, service enumeration, operating system detection, and local network mapping, I gained practical experience with techniques commonly used during vulnerability assessments and penetration testing engagements. 
 
