@@ -1,7 +1,7 @@
 # Lab 06 – Nmap Network Discovery
 
 
-##  🎯 Objective
+## 🎯 Objective
 
 Learn the fundamentals of network reconnaissance using Nmap by scanning the local machine and the local network. This lab introduces essential techniques used during the reconnaissance phase of penetration testing and security assessments.
 
@@ -42,9 +42,7 @@ Learn the fundamentals of network reconnaissance using Nmap by scanning the loca
 ### 1. Verify Installation
 
 ```powershell
-
 nmap --version
-
 ```
 
 📌 Purpose
@@ -58,9 +56,7 @@ Nmap version 7.99 successfully detected.
 ### 2. Basic Host Scan
 
 ```powershell
-
 nmap 127.0.0.1
-
 ```
 
 📌 Purpose
@@ -83,9 +79,7 @@ Open ports detected:
 
 
 ```powershell
-
 nmap -sV 127.0.0.1
-
 ```
 
 📌 Purpose 
@@ -105,9 +99,7 @@ Detected services:
 ### 4. Operating System Detection
 
 ```powershell
-
 nmap -O 127.0.0.1
-
 ```
 
 📌 Purpose 
@@ -126,9 +118,7 @@ Operating System detected:
 ### 5. Aggressive Scan
 
 ```powershell
-
 nmap -A 127.0.0.1
-
 ```
 📌 Purpose 
 
@@ -159,9 +149,7 @@ Additional information collected:
 ### 6. Network Configuration
 
 ```powershell
-
 ipconfig
-
 ```
 
 📌 Purpose
@@ -180,9 +168,7 @@ Identify the local network configuration before scanning the subnet.
 ### 7. Network Discovery
 
 ```powershell
-
 nmap -sn 192.168.1.0/24
-
 ```
 
 📌 Purpose 
@@ -192,13 +178,9 @@ Discover active hosts on the local network.
 📊 Results
 
 | IP Address |    Device        |
-
 |------------|------------------|
-
 |192.168.1.1 |  Huawei Router   |
-
 |192.168.1.8 |  Unknown Device  |
-
 |192.168.1.31| Windows 11 Laptop|
 
 
@@ -206,12 +188,8 @@ Discover active hosts on the local network.
 
 The following screenshots are available in:
 
-```
-
-Lab-06-Nmap/
-
+```Lab-06-Nmap/
 └── screenshots/
-
 ```
 
 - 01-nmap-version.png
@@ -232,14 +210,9 @@ Lab-06-Nmap/
 
 Network topology diagram:
 
-```
-
-Lab-06-Nmap/
-
+```Lab-06-Nmap/
 └── diagrams/
-
   └── network-topology.drawio
-
 ```
 
 ## 🎓 Key Learnings
